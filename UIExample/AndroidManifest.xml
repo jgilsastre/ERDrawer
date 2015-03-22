@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.test.jgilsastre"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="es.test.jgilsastre.activities.InitActivity"
+            android:label="@string/title_activity_init" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".activities.adding.SelectTypeDialog"
+            android:label="@string/title_activity_add_dialog"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name=".activities.adding.AddDomain"
+            android:label="@string/title_activity_add_domain"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name=".activities.adding.AddEntity"
+            android:label="@string/title_activity_add_entity"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name=".activities.adding.AddRelation"
+            android:label="@string/title_activity_add_relation"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name=".activities.adding.AddAttribute"
+            android:label="@string/title_activity_add_attribute"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        
+    </application>
+
+</manifest>

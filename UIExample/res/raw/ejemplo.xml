@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1.0" id="d1">
+    <name><![CDATA[Diagram Example]]></name>
+    <domains>
+		<domain id="dom1">
+			<name>domain1</name>
+			<default_value>0</default_value>
+			<restrictions>
+			    <restriction><![CDATA[Restriction 1]]></restriction>
+			    <restriction><![CDATA[Restriction 2]]></restriction>
+			</restrictions>
+		</domain>
+		<domain id="dom2">
+			<name>domain2</name>
+			<default_value>Hello</default_value>
+			<restrictions>
+			    <restriction><![CDATA[Restriction 1]]></restriction>
+			    <restriction><![CDATA[Restriction 2]]></restriction>
+			</restrictions>
+		</domain>
+	</domains>
+	<entities>
+		<entity id="ent1">
+		    <point x="0" y="0" />
+			<name textsize="10">entity1</name>
+			<weak>0</weak>
+			<proportion width="10" height="10" />
+			<attributes>
+				<attribute id="att1" primary="1" nullable="0" unique="1">
+					<point x="0" y="0" />
+					<name textsize="10">AttPrim</name>
+					<length>0</length>
+					<att_domain>integer</att_domain>
+					<proportion width="10" height="10" />
+				</attribute>
+				<attribute id="att2" primary="0" nullable="0" unique="1">
+					<point x="0" y="0" />
+					<name textsize="10">Att1</name>
+					<length>0</length>
+					<att_domain>integer</att_domain>
+					<proportion width="10" height="10" />
+				</attribute>
+				<attribute id="att3" primary="0" nullable="1" unique="0">
+					<point x="0" y="0" />
+					<name textsize="10">Att2</name>
+					<length>0</length>
+					<att_domain>integer</att_domain>
+					<proportion width="10" height="10" />
+				</attribute>
+			</attributes>
+		</entity>
+		<entity id="ent2">
+			<point x="0" y="0" />
+			<name textsize="10">entity2</name>
+			<weak>1</weak>
+			<proportion width="10" height="10" />
+			<attributes>
+				<attribute id="att11" primary="1" nullable="0" unique="1">
+					<point x="0" y="0" />
+					<name textsize="10">att11</name>
+					<length>0</length>
+					<att_domain>integer</att_domain>
+					<proportion width="10" height="10" />
+				</attribute>
+				<attribute id="att12" primary="0" nullable="0" unique="1">
+					<point x="0" y="0" />
+					<name textsize="10">att12</name>
+					<length>0</length>
+					<att_domain>integer</att_domain>
+					<proportion width="10" height="10" />
+				</attribute>
+				<attribute id="att13" primary="0" nullable="1" unique="0">
+					<point x="0" y="0" />
+					<name textsize="10">att13</name>
+					<length>0</length>
+					<att_domain>integer</att_domain>
+					<proportion width="10" height="10" />
+				</attribute>
+			</attributes>
+		</entity>
+		<entity id="ent3">
+			<point x="0" y="0" />
+			<name textsize="10">entity3</name>
+			<weak>0</weak>
+			<proportion width="10" height="10" />
+			<attributes>
+				<attribute id="att21" primary="1" nullable="0" unique="1">
+					<point x="0" y="0" />
+					<name textsize="10">att21</name>
+					<length>0</length>
+					<att_domain>integer</att_domain>
+					<proportion width="10" height="10" />
+				</attribute>
+				<attribute id="att22" primary="0" nullable="0" unique="1">
+					<point x="0" y="0" />
+					<name textsize="10">att22</name>
+					<length>0</length>
+					<att_domain>integer</att_domain>
+					<proportion width="10" height="10" />
+				</attribute>
+				<attribute id="att23" primary="0" nullable="1" unique="0">
+					<point x="0" y="0" />
+					<name textsize="10">att23</name>
+					<length>0</length>
+					<att_domain>integer</att_domain>
+					<proportion width="10" height="10" />
+				</attribute>
+			</attributes>
+		</entity>
+	</entities>
+
+	<relations>
+		<relation id="rel1">
+			<point x="0" y="0" />
+			<name textsize="10">rel1</name>
+			<proportion width="10" height="10" />
+			<related_entities>
+				<entity_id cardinality="1">ent1</entity_id>
+				<entity_id cardinality="N">ent2</entity_id>
+				<entity_id cardinality="1">ent3</entity_id>
+			</related_entities>
+			<attributes>
+				<attribute id="attr1" primary="1" nullable="0" unique="1">
+					<point x="0" y="0" />
+					<name textsize="10">attr1</name>
+					<length>0</length>
+					<att_domain>integer</att_domain>
+					<proportion width="10" height="10" />
+				</attribute>
+			</attributes>
+		</relation>
+	</relations>
+	
+</diagram>
